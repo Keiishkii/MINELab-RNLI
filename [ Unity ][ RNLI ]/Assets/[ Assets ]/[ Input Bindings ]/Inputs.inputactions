@@ -1,0 +1,34 @@
+{
+    "name": "Inputs",
+    "maps": [
+        {
+            "name": "Default Mapping",
+            "id": "7b95cf57-a93f-4969-9e2b-4c648a4cd372",
+            "actions": [
+                {
+                    "name": "Keyboard Space",
+                    "type": "Button",
+                    "id": "cefa061b-fa94-472a-81a8-6213d6a83208",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "63f9c41b-0541-444d-ab0e-005e5b103f28",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Keyboard Space",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
