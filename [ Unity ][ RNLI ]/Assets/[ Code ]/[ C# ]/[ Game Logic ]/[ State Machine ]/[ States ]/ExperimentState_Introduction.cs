@@ -7,33 +7,24 @@ using UnityEngine.InputSystem;
 public class ExperimentState_Introduction : IExperimentState
 {
     #region [ Unserialised Fields ]
-    private IEnumerator _sessionConformationCoroutine;
+    private IEnumerator _sessionIntroductionCoroutine;
     #endregion
     
-    public override void OnStateEnter()
-    {
-        _experimentUxml.ShowIntroductionVisualElement();
-        _experimentController.StartCoroutine(_sessionConformationCoroutine = SessionConformationCoroutine());
-    }
-
+    public ExperimentState_Introduction(string stateName) : base(stateName) { }
+    
+    public override void OnStateEnter() => _experimentController.StartCoroutine(_sessionIntroductionCoroutine = SessionIntroductionCoroutine());
     public override void OnStateExit()
     {
-        if (!ReferenceEquals(_sessionConformationCoroutine, null)) _experimentController.StopCoroutine(_sessionConformationCoroutine);
+        if (!ReferenceEquals(_sessionIntroductionCoroutine, null)) _experimentController.StopCoroutine(_sessionIntroductionCoroutine);
     }
 
-    private IEnumerator SessionConformationCoroutine()
+    private IEnumerator SessionIntroductionCoroutine()
     {
-        bool conformation = false;
+        yield return _experimentUxml.instructionContainer.DisplayTextFieldCoroutine(_sessionData.instructionUIContentDictionary["Introduction"], 
+            _inputManager.AwaitResearcherConformationCoroutine());
         
-        _inputManager.spaceInputActionReference.action.performed += Test;
-        yield return new WaitUntil(() => conformation);
-        _inputManager.spaceInputActionReference.action.performed -= Test;
-
-        _experimentUxml.HideIntroductionVisualElement();
-        _experimentStateMachine.State = _experimentStateMachine.Session;
+        DataManager.StartDataCollection(_sessionData);
         
-        yield break;
-
-        void Test(InputAction.CallbackContext callbackContext) => conformation = true;
+        _experimentStateMachine.State = _experimentStateMachine.ControllerTutorial;
     }
 }

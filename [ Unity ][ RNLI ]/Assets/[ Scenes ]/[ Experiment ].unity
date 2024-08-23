@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 119ec07f1c7ed204db46bd8465fd5a50, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: efd1c33efd2d58340b88804268e6833f, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,6 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.11890004, g: 0.31090894, b: 0.35299024, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -123,6 +122,50 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &159129098
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 159129099}
+  - component: {fileID: 159129100}
+  m_Layer: 0
+  m_Name: '[ Network Manager ]'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &159129099
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 159129098}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2142979860}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &159129100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 159129098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2c2b74b8b9b21b46a95cd5d0f1c2e3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &621841864
 GameObject:
   m_ObjectHideFlags: 0
@@ -292,6 +335,7 @@ GameObject:
   - component: {fileID: 963194228}
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
+  - component: {fileID: 963194229}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -373,6 +417,45 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1088179288}
   m_LocalEulerAnglesHint: {x: 0, y: -120, z: 0}
+--- !u!114 &963194229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e312192b967c31f449d6cb5f01141e73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _defaultRotationOffset: {x: 0, y: 180, z: 0}
+  _rotationAnimationCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  _animationTurnAngle: 45
+  _animationDuration: 120
 --- !u!1 &1088179287
 GameObject:
   m_ObjectHideFlags: 0
@@ -416,6 +499,7 @@ GameObject:
   - component: {fileID: 1622293854}
   - component: {fileID: 1622293855}
   - component: {fileID: 1622293856}
+  - component: {fileID: 1622293857}
   m_Layer: 0
   m_Name: '[ Input Manager ]'
   m_TagString: Untagged
@@ -450,7 +534,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c705c1112b114ed4b870d4d23e224290, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spaceInputActionReference: {fileID: -5590370193695931448, guid: acb78ba3619fcfd4fa9eb19058d1b8f4, type: 3}
+  researcherConformationActionReference: {fileID: -5590370193695931448, guid: acb78ba3619fcfd4fa9eb19058d1b8f4, type: 3}
+  participantConformationActionReference: {fileID: 2321597860600680556, guid: acb78ba3619fcfd4fa9eb19058d1b8f4, type: 3}
+  avScaleInputActionReference: {fileID: -5322329672167010408, guid: acb78ba3619fcfd4fa9eb19058d1b8f4, type: 3}
+  skipInputActionReference: {fileID: 3119017430317785107, guid: acb78ba3619fcfd4fa9eb19058d1b8f4, type: 3}
 --- !u!114 &1622293856
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -481,6 +568,21 @@ MonoBehaviour:
   m_DefaultActionMap: Default Mapping
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 963194227}
+--- !u!114 &1622293857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1622293853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &2068708533
 GameObject:
   m_ObjectHideFlags: 0
@@ -543,6 +645,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 321c2f9f892fbf04c9b4324a71ee0ca5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  videoPlayerContainer:
+    IsExperiment: 0
 --- !u!328 &2068708537
 VideoPlayer:
   m_ObjectHideFlags: 0
@@ -608,9 +712,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a46847f85a388b488c14414a980b657, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _stateMachine:
-    Session:
-      _sessionData: {fileID: 11400000, guid: 38154ecc41f93594e8db598e1f3509b9, type: 2}
+  sessionData: {fileID: 11400000, guid: 38154ecc41f93594e8db598e1f3509b9, type: 2}
+  _stateMachine: {}
 --- !u!4 &2142979860
 Transform:
   m_ObjectHideFlags: 0
@@ -625,6 +728,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1622293854}
+  - {fileID: 159129099}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807

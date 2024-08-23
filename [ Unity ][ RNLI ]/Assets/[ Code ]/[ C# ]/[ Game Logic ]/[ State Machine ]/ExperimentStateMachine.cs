@@ -1,6 +1,4 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 [Serializable]
@@ -19,20 +17,27 @@ public class ExperimentStateMachine
         {
             if (!ReferenceEquals(_state, null)) _state.OnStateExit();
             _state = value;
+            
+            NetworkManager.Instance.MarkerStreamWriter.WriteMarker(new []{$"State Change: {_state.StateName}"});
             _state.OnStateEnter();
-            Debug.Log($"State Entered: {value}");
         }
     }
 
-    [SerializeField] public ExperimentState_Introduction Introduction = new ();
-    [SerializeField] public ExperimentState_Session Session = new ();
-    [SerializeField] public ExperimentState_End End = new ();
+    [SerializeField] public ExperimentState_Introduction Introduction = new ("Introduction");
+    [SerializeField] public ExperimentState_ControllerTutorial ControllerTutorial = new ("Controller Tutorial");
+    [SerializeField] public ExperimentState_Calibration Calibration = new ("Calibration");
+    [SerializeField] public ExperimentState_ExperimentTutorial ExperimentTutorial = new ("Experiment Tutorial");
+    [SerializeField] public ExperimentState_Experiment Experiment = new ("Experiment");
+    [SerializeField] public ExperimentState_End End = new ("End");
     #endregion
 
     public void Initialise(ExperimentController experimentController, InputManager inputManager, ExperimentUXML experimentUxml)
     {
         Introduction.Initialise(this, experimentController, inputManager, experimentUxml);
-        Session.Initialise(this, experimentController, inputManager, experimentUxml);
+        ControllerTutorial.Initialise(this, experimentController, inputManager, experimentUxml);
+        Calibration.Initialise(this, experimentController, inputManager, experimentUxml);
+        ExperimentTutorial.Initialise(this, experimentController, inputManager, experimentUxml);
+        Experiment.Initialise(this, experimentController, inputManager, experimentUxml);
         End.Initialise(this, experimentController, inputManager, experimentUxml);
     }
 

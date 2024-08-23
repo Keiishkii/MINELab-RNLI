@@ -9,6 +9,7 @@ using Random = UnityEngine.Random;
 public class ExperimentController : MonoBehaviour
 {
     #region [ Serialised Fields ]
+    public SessionDataScriptableObject sessionData;
     [SerializeField] private ExperimentStateMachine _stateMachine = new ExperimentStateMachine();
     #endregion
 

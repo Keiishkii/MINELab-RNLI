@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22186ab49c72432c9d4843a7cdb6649d, type: 3}
+  m_Name: Instruction UI Content - Controller Tutorial 2
+  m_EditorClassIdentifier: 
+  lookupKey: Controller Tutorial 2
+  displayTitle: 0
+  title: 
+  displayContent: 1
+  content: 'Above is the AV Scale, this will be used by you as the participant to
+    give your feedback throught the experiment.
+
+    For now, try moving around the
+    joysticks and pushing them in. Your inputs will be mirrored on the AV Scale. '
+  displayFooter: 1
+  footer: Once you have read this, infrom your supervising researcher...

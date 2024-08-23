@@ -6,9 +6,36 @@
             "id": "7b95cf57-a93f-4969-9e2b-4c648a4cd372",
             "actions": [
                 {
-                    "name": "Keyboard Space",
+                    "name": "Researcher Conformation",
                     "type": "Button",
                     "id": "cefa061b-fa94-472a-81a8-6213d6a83208",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Participant Conformation",
+                    "type": "Button",
+                    "id": "6c561d62-8ca1-4724-983d-e3c55daf69a0",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "AV Scale Value",
+                    "type": "Value",
+                    "id": "71ab269a-c4d9-4a45-aa08-ea2d3dd2bede",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Editor Skip",
+                    "type": "Button",
+                    "id": "aab31980-669d-4036-88f9-b25e65537e6a",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -23,7 +50,128 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Keyboard Space",
+                    "action": "Researcher Conformation",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "2D Vector",
+                    "id": "7d59caee-f2a7-4f9d-a009-862b729fc1e5",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "AV Scale Value",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "de6577bd-5c0e-41dc-9db1-0f86d5416ade",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "AV Scale Value",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "0e293664-8d8e-4b7b-8a8c-1211b7c5f8c2",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "AV Scale Value",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "57fe9122-6367-4ec4-9cc7-a46470b563c6",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "AV Scale Value",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "62817169-eaa6-48d5-b61c-27a708ed06cf",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "AV Scale Value",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "86332bcb-b852-4cc9-a6d3-0b2b7634837a",
+                    "path": "<Gamepad>/leftStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "AV Scale Value",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "82a17058-f8af-47f4-8fd7-f52b76f2f052",
+                    "path": "<Gamepad>/rightStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "AV Scale Value",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "91e91b34-5485-4a7f-86cd-c14db8602629",
+                    "path": "<Keyboard>/shift",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Participant Conformation",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c7841b69-b057-4ce2-9aeb-2a0c94850f98",
+                    "path": "<Gamepad>/leftStickPress",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Participant Conformation",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1b42330c-ea39-4a57-892d-2a1eade3ea51",
+                    "path": "<Gamepad>/rightStickPress",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Participant Conformation",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a57dfeda-76a8-4c35-b99f-b7709a23703c",
+                    "path": "<Keyboard>/backquote",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Editor Skip",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
