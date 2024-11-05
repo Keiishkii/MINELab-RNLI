@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22186ab49c72432c9d4843a7cdb6649d, type: 3}
+  m_Name: Instruction UI Content - Spider Introduction
+  m_EditorClassIdentifier: 
+  lookupKey: Spider Introduction
+  displayTitle: 1
+  title: Negative Video Introduction
+  displayContent: 1
+  content: 'This video has been chosen to because most people see this as more negative
+    while showing high arousal.
+
+    You will be walked through what kinds of inputs
+    you may choose in response to the video.'
+  displayFooter: 1
+  footer: Once you are ready press in on the joystick...

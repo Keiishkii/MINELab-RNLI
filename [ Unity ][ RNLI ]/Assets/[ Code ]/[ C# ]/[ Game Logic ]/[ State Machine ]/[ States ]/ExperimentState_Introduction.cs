@@ -20,11 +20,12 @@ public class ExperimentState_Introduction : IExperimentState
 
     private IEnumerator SessionIntroductionCoroutine()
     {
-        yield return _experimentUxml.instructionContainer.DisplayTextFieldCoroutine(_sessionData.instructionUIContentDictionary["Introduction"], 
-            _inputManager.AwaitResearcherConformationCoroutine());
+        if (!_experimentController.sessionProgressionFlags.HasFlag(SessionStateFlags.Introduction)) goto StateEnd;
         
+        yield return _experimentUxml.instructionContainer.DisplayTextFieldCoroutine(_sessionData.instructionUIContentDictionary["Introduction"], _inputManager.AwaitResearcherConformationCoroutine());
         DataManager.StartDataCollection(_sessionData);
         
+        StateEnd:
         _experimentStateMachine.State = _experimentStateMachine.ControllerTutorial;
     }
 }

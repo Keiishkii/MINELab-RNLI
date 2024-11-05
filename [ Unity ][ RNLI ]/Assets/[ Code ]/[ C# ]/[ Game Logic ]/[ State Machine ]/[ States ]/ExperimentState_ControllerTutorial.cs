@@ -15,6 +15,8 @@ public class ExperimentState_ControllerTutorial : IExperimentState
 
     private IEnumerator SessionControllerTutorialCoroutine()
     {
+        if (!_experimentController.sessionProgressionFlags.HasFlag(SessionStateFlags.ControllerTutorial)) goto StateEnd;
+        
         #region [ Controller Tutorial: 1 ]
         yield return _instructionDisplay.DisplayTextFieldCoroutine(_sessionData.instructionUIContentDictionary["Controller Tutorial 1"], 
             _inputManager.AwaitResearcherConformationCoroutine());
@@ -35,6 +37,7 @@ public class ExperimentState_ControllerTutorial : IExperimentState
             ControllerAVValueTestCoroutine());
         #endregion
 
+        StateEnd:
         _experimentStateMachine.State = _experimentStateMachine.Calibration;
         
         yield break;

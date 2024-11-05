@@ -19,7 +19,7 @@ MonoBehaviour:
   content: 'Thank you for choosing to participate in this study.
 
     You may withdraw
-    your request at anytime.'
+    at anytime.'
   displayFooter: 1
   footer: Please inform your supervising researcher once you are ready to begin,\nthey
     will start the experiment by pressing 'SPACE' on the keyboard.

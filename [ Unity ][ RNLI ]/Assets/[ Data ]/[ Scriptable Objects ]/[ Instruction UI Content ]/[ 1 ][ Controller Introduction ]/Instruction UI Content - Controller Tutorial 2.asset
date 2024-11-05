@@ -16,10 +16,10 @@ MonoBehaviour:
   displayTitle: 0
   title: 
   displayContent: 1
-  content: 'Above is the AV Scale, this will be used by you as the participant to
-    give your feedback throught the experiment.
+  content: 'Above is the <b>Arousal and Valance Scale</b>, this will be used by you
+    as the participant to give your feedback throught the experiment.
 
-    For now, try moving around the
-    joysticks and pushing them in. Your inputs will be mirrored on the AV Scale. '
+    For now,
+    try moving around the joysticks and pushing them in. Your responses will be recorded.'
   displayFooter: 1
   footer: Once you have read this, infrom your supervising researcher...

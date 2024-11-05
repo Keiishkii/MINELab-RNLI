@@ -37,6 +37,12 @@ public static class DataManager
     
     public static void EndDataCollection()
     {
+        if (ReferenceEquals(_experimentData, null))
+        {
+            Debug.LogError("[ Error ]: Could not save and end data collection, it had not been started correctly.");
+            return;
+        }
+        
         NetworkManager.Instance.MarkerStreamWriter.WriteMarker(new []{"Data Collection Ended"});
         
         string filename = $"{string.Concat(($"{DateTime.Now:f}").Split(Path.GetInvalidFileNameChars()))}.json";
@@ -52,7 +58,13 @@ public static class DataManager
     
     public static void AddVideoEvent(SceneDataScriptableObject sceneData, VideoEvent videoEvent, Activity activity)
     {
-        NetworkManager.Instance.MarkerStreamWriter.WriteMarker(new []{$"Video: {sceneData.videoLabel}, Event: {videoEvent}"});
+        if (ReferenceEquals(_experimentData, null))
+        {
+            Debug.LogError("[ Error ]: Could not log Video Event, data collection has not been started.");
+            return;
+        }
+        
+        NetworkManager.Instance.MarkerStreamWriter.WriteMarker(new []{$"Video: {sceneData.videoLabel}, Event: {videoEvent}, Time: {DateTime.Now:HH:mm:ss.fff}"});
         
         (activity switch
         {

@@ -24,7 +24,7 @@ public class InputManager : MonoBehaviour
         avScaleInputActionReference.action.performed += (context) =>
         {
             Vector2 vector = context.ReadValue<Vector2>();
-            NetworkManager.Instance.AVDataStreamWriter.WriteMarker(new []{vector.x, vector.y});
+            //NetworkManager.Instance.AVDataStreamWriter.WriteMarker(new []{vector.x, vector.y});
         };
     }
 

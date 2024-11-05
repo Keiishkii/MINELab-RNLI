@@ -15,9 +15,18 @@ MonoBehaviour:
   expressionCalibrationDuration: 3
   baselineHeartbeatCalibrationDuration: 120
   transitionalWaitDuration: 60
+  tutorialPhotos:
+  - {fileID: 11400000, guid: b288c21f8c2966b4abd7d825ec554f26, type: 2}
+  - {fileID: 11400000, guid: 4155f8032d1929b4ca40d775944b61fc, type: 2}
+  - {fileID: 11400000, guid: ec143911993fed540ac7199d81189ee0, type: 2}
+  - {fileID: 11400000, guid: b1e508b06101ee5419786d58ecb9d1ad, type: 2}
+  - {fileID: 11400000, guid: 45730ed4c751487449a32333bbb55cb0, type: 2}
+  - {fileID: 11400000, guid: b187816d834ef9c4696219ff4517e5f0, type: 2}
   tutorialVideos:
   - {fileID: 11400000, guid: fe24c40a1dd545040bc3c189d6cba6a8, type: 2}
   - {fileID: 11400000, guid: ca4a591eb08aade44bd59af0aa17b432, type: 2}
+  - {fileID: 11400000, guid: 0a41c34d1417d1c4faf0d9fe226ad9a7, type: 2}
+  - {fileID: 11400000, guid: e96a8c37da470bf498ccc25d10e42200, type: 2}
   experimentVideos:
   - {fileID: 11400000, guid: 4ccaec89bcd6e7b4fae7429e0fba01d8, type: 2}
   - {fileID: 11400000, guid: a41139b8109cc504ba54b5d4762c6071, type: 2}
@@ -52,8 +61,18 @@ MonoBehaviour:
   - {fileID: 11400000, guid: c63b43c271515434f8f22ba20048e73e, type: 2}
   - {fileID: 11400000, guid: cfcd2ff6d65544747aeae1a7d82f5a2b, type: 2}
   - {fileID: 11400000, guid: 83e5ac47379106142a974e098f460fd3, type: 2}
-  - {fileID: 11400000, guid: 3d8ed913cb47f644fb36a09d96b538d6, type: 2}
   - {fileID: 11400000, guid: 3c01b47a573bd2f419f3a3dc9abe5ee5, type: 2}
+  - {fileID: 11400000, guid: 3d8ed913cb47f644fb36a09d96b538d6, type: 2}
+  - {fileID: 11400000, guid: 0fc696a3e4de56745b9b3842869a64d2, type: 2}
+  - {fileID: 11400000, guid: 0a3bb175c4f0528468f9406de7668947, type: 2}
+  - {fileID: 11400000, guid: b18043c2d1a72c0438d461d5b24caaf4, type: 2}
+  - {fileID: 11400000, guid: 0ffc918a59669e246b283990504f7a8e, type: 2}
+  - {fileID: 11400000, guid: c1d5685da11a58a42be6de8dc911db5b, type: 2}
+  - {fileID: 11400000, guid: fec269fd9446fe94ab00425f087b089a, type: 2}
+  - {fileID: 11400000, guid: cc6c9a3cb7c8b9a439957f37c654ad84, type: 2}
+  - {fileID: 11400000, guid: bc301ae38eaa2d446bd5b2da3ab74f89, type: 2}
+  - {fileID: 11400000, guid: 8f820d63f9f7a3d4fa3182354b982e57, type: 2}
+  - {fileID: 11400000, guid: 91f32e9e30572af448ee23838efb044b, type: 2}
   expressionData:
   - {fileID: 11400000, guid: 48656840e100ba24d9512702c0293541, type: 2}
   - {fileID: 11400000, guid: ff7d2c71fe3f687479b3195da843f158, type: 2}

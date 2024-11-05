@@ -16,7 +16,7 @@ MonoBehaviour:
   displayTitle: 0
   title: 
   displayContent: 1
-  content: "A baseline for your heartbeat is about to be recorded.\r\nOnce you have
-    confirmed, sit calmly for the next minute\r"
+  content: "A baseline for your heartrate is about to be recorded.\r\nOnce you have
+    confirmed, sit calmly and relax for the next minute\r."
   displayFooter: 1
   footer: Press the joystick when ready...

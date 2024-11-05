@@ -15,18 +15,18 @@ public class ExperimentState_Calibration : IExperimentState
 
     private IEnumerator SessionCalibration()
     {
+        if (!_experimentController.sessionProgressionFlags.HasFlag(SessionStateFlags.Calibration)) goto StateEnd;
+        
         #region [ Calibration Instructions ]
         yield return _instructionDisplay.DisplayTextFieldCoroutine(_sessionData.instructionUIContentDictionary["Calibration Introduction"], 
             _inputManager.AwaitParticipantConformationCoroutine());
         #endregion
-
 
         #region [ Heartbeat Calibration ]
         yield return _calibrator.DisplayExpressionCoroutine(_sessionData.instructionUIContentDictionary["Heartbeat Calibration"], 
             _expressionData = _sessionData.expressionDataDictionary["Heartbeat"],
             RecordExpression(_expressionData, _sessionData.baselineHeartbeatCalibrationDuration));
         #endregion
-        
         
         #region [ Neutral Calibration ]
         yield return _calibrator.DisplayExpressionCoroutine(_sessionData.instructionUIContentDictionary["Expression Neutral"], 
@@ -69,6 +69,7 @@ public class ExperimentState_Calibration : IExperimentState
             _inputManager.AwaitParticipantConformationCoroutine());
         #endregion
 
+        StateEnd:
         _experimentStateMachine.State = _experimentStateMachine.ExperimentTutorial;
         
         yield break;
@@ -78,7 +79,7 @@ public class ExperimentState_Calibration : IExperimentState
             yield return _inputManager.AwaitParticipantConformationCoroutine();
                 
             NetworkManager.Instance.MarkerStreamWriter.WriteMarker(new []{$"{expressionData.marker} - Start"});
-            yield return _timer.StartTimer(duration);
+            yield return _timer.StartTimer(duration, true);
             NetworkManager.Instance.MarkerStreamWriter.WriteMarker(new []{$"{expressionData.marker} - End"});
         }
     }

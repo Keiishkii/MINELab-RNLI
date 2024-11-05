@@ -37,15 +37,6 @@ public class FixedUpdateStreamWriter<T> : IStreamWriter<T>
             _currentSample = _function.Invoke();
             PushOutput(_outlet, _currentSample);
             
-            /*
-            #if UNITY_EDITOR
-            List<string> sample = _currentSample.Select(VARIABLE => $"{VARIABLE}").ToList();
-            string channels = sample.Aggregate("", (current, val) => current + $"{val}, ");
-            channels = channels.Substring(0, channels.Length - 2);
-            Debug.Log($"<color=#36a4ba>Marker</color>: [ {channels} ]");
-            #endif
-            */
-            
             yield return null;
         }
     }

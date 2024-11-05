@@ -16,8 +16,8 @@ MonoBehaviour:
   displayTitle: 0
   title: 
   displayContent: 1
-  content: "You will also be required to give positional  inputs using the joystick,
-    the meanings of these inputs will be explained later. \nHowever, for now, try
-    and match the positions of the targets."
+  content: "You will also be required to give positional inputs using the joystick.
+    The meaning of these inputs will be explained later. \nHowever, for now, try
+    and match the position of the targets."
   displayFooter: 1
   footer: Move your input pointer to match the target locations...

@@ -16,10 +16,7 @@ MonoBehaviour:
   displayTitle: 1
   title: Tutorial
   displayContent: 1
-  content: 'You are about to be shown two videos, both chosen to elicit different
-    emotional responses.
-
-    Using the controller in your hand, rate your emotional
-    response to the stimulus presented.'
+  content: "We will now begin the tutorial, \nthis will explain the self reported
+    responses and how they are recorded throughout the experiment."
   displayFooter: 1
   footer: Once you are ready to start the tutorial, inform the supporting researcher.

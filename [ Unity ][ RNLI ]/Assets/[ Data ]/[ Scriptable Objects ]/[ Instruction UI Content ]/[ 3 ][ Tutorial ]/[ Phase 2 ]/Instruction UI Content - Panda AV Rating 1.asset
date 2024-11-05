@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 22186ab49c72432c9d4843a7cdb6649d, type: 3}
-  m_Name: Instruction UI Content - Panda Introduction
+  m_Name: Instruction UI Content - Panda AV Rating 1
   m_EditorClassIdentifier: 
-  lookupKey: Panda Introduction
-  displayTitle: 1
-  title: Positive Video Introduction
+  lookupKey: Panda AV Rating 1
+  displayTitle: 0
+  title: 
   displayContent: 1
-  content: 'This video has been chosen to instill a positive valance, with moderate
-    arousal.
+  content: 'This scene depicts a zookeeper looking after a panda.
 
-    You will be walked through what kinds of inputs will be expected
-    from you.'
+    Though you
+    may not feel the same, most people experience this video as positive and somewhat
+    arousing. '
   displayFooter: 1
-  footer: Once you are ready to watch the video press the joystick...
+  footer: Move your AV rating to match the example...

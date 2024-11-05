@@ -16,6 +16,6 @@ MonoBehaviour:
   displayTitle: 0
   title: 
   displayContent: 1
-  content: Pull a neutral expression and hold it for 3 seconds.
+  content: Have a neutral expression and hold it for 3 seconds.
   displayFooter: 1
   footer: Press the joystick when ready...

@@ -646,7 +646,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   videoPlayerContainer:
-    IsExperiment: 0
+    PointerDisplayed: 0
 --- !u!328 &2068708537
 VideoPlayer:
   m_ObjectHideFlags: 0
@@ -693,6 +693,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2142979860}
   - component: {fileID: 2142979859}
+  - component: {fileID: 2142979861}
   m_Layer: 0
   m_Name: '[ Experiment Controller ]'
   m_TagString: Untagged
@@ -713,6 +714,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sessionData: {fileID: 11400000, guid: 38154ecc41f93594e8db598e1f3509b9, type: 2}
+  sessionProgressionFlags: 24
   _stateMachine: {}
 --- !u!4 &2142979860
 Transform:
@@ -731,6 +733,18 @@ Transform:
   - {fileID: 159129099}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2142979861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2142979858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01427e757ee4de84ca794fefd7ecd4e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

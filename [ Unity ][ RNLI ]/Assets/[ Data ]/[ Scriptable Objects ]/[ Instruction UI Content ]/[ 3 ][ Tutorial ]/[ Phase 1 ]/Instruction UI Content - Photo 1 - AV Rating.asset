@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22186ab49c72432c9d4843a7cdb6649d, type: 3}
+  m_Name: Instruction UI Content - Photo 1 - AV Rating
+  m_EditorClassIdentifier: 
+  lookupKey: Photo 1 - AV Rating
+  displayTitle: 1
+  title: Positive 1 - AV Rating
+  displayContent: 1
+  content: "This photo was rated by most people as positive\r but not very arousing."
+  displayFooter: 1
+  footer: Move your AV rating to match the example...

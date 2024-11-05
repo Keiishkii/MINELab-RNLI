@@ -16,13 +16,12 @@ MonoBehaviour:
   displayTitle: 1
   title: Reminder
   displayContent: 1
-  content: 'Just a reminded, as the videos within this experiment progess,
+  content: 'Just a reminded, as the videos within this experiment progress,
 
     you
-    should be giving a continuous reading of your emotional responses with the controller.
+    should give a continuous reading of your emotional responses with the controller.
 
     This
-    response will change during each of the videos, so try to match it as best you
-    can throughout.'
+    response will change in each of the videos, so try to match it as best you can.'
   displayFooter: 1
   footer: Once you are ready to watch the video press the joystick...

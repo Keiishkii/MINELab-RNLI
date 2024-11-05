@@ -16,6 +16,6 @@ MonoBehaviour:
   displayTitle: 1
   title: 'Calibration Complete:'
   displayContent: 1
-  content: 'We have now calibrated your base expressions, '
+  content: 'We have now calibrated your heartrate and facial expressions. '
   displayFooter: 1
   footer: Press the joystick to continue...

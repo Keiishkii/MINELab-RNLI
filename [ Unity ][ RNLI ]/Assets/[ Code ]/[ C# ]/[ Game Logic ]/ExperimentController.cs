@@ -10,6 +10,7 @@ public class ExperimentController : MonoBehaviour
 {
     #region [ Serialised Fields ]
     public SessionDataScriptableObject sessionData;
+    public SessionStateFlags sessionProgressionFlags;
     [SerializeField] private ExperimentStateMachine _stateMachine = new ExperimentStateMachine();
     #endregion
 
@@ -30,4 +31,15 @@ public class ExperimentController : MonoBehaviour
     }
 
     private void Start() => _stateMachine.Start();
+}
+
+[Flags]
+public enum SessionStateFlags
+{
+    None = 0,
+    Introduction = 1,
+    ControllerTutorial = 2,
+    Calibration = 4,
+    ExperimentTutorial = 8,
+    Experiment = 16,
 }

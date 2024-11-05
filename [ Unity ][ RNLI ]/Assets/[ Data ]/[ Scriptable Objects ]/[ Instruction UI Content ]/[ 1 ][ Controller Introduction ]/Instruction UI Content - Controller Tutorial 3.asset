@@ -16,10 +16,10 @@ MonoBehaviour:
   displayTitle: 0
   title: 
   displayContent: 1
-  content: 'You will now be left to progress through the rest of the session entirely
+  content: 'You will now be left to progress through the rest of the session mostly
     on your own.
 
-    To conferm you have read any future  instructions, just push
-    in on your joystick.'
+    To confirm you have read any instructions, just push in on
+    the joystick.'
   displayFooter: 1
   footer: Try it now, push in on a joystick to move on...

@@ -16,9 +16,9 @@ MonoBehaviour:
   displayTitle: 1
   title: Tutorial Complete
   displayContent: 1
-  content: 'You have now completed the tutorial, we will now begin the main experiment.
+  content: 'You have now completed the tutorial, we will begin the main experiment.
 
     Don''t
-    forget to rate your responses to the stimuli provided.'
+    forget to continously rate your responses to the videos.'
   displayFooter: 1
   footer: Once you are ready to begin, inform the supporting researcher.

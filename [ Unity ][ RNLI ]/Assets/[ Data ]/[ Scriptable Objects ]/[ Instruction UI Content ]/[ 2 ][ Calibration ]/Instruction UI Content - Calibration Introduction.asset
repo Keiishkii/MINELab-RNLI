@@ -16,12 +16,16 @@ MonoBehaviour:
   displayTitle: 1
   title: 'Calibration:'
   displayContent: 1
-  content: 'Now that you know how use the controller, we can now calibrate the OCO
-    Lense.
+  content: 'Now that you know how use the controller, we can now calibrate the digital
+    glasses and digital wrtistband.
 
-    You will be shown a series of expressions, try to match them, then
-    hold the expression until
+    You will first be required to sit still
+    and relax as we measure your base heartrate.
 
-    the timer completes.  '
+    Afterwards you will be shown
+    a series of facial expressions. Try to match them, then hold the facial expression
+    until
+
+    the timer completes.'
   displayFooter: 1
   footer: Press the joystick to continue...

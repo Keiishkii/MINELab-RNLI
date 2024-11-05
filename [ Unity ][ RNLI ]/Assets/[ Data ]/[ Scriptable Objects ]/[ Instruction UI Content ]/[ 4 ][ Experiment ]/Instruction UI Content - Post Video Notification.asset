@@ -10,16 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 22186ab49c72432c9d4843a7cdb6649d, type: 3}
-  m_Name: Instruction UI Content - Spider Introduction
+  m_Name: Instruction UI Content - Post Video Notification
   m_EditorClassIdentifier: 
-  lookupKey: Spider Introduction
+  lookupKey: Post Video Notification
   displayTitle: 1
-  title: Negative Video Introduction
+  title: Rating Reminder
   displayContent: 1
-  content: 'This video has been chosen to instill a negative valance, with higher
-    arousal.
+  content: 'This is a reminder to rate the next video.
 
-    You will be walked through what kinds of inputs will be expected
-    from you.'
-  displayFooter: 1
+    Arousal and Valance ratings
+    are always recorded even when not shown.
+
+    Please rate continously. '
+  displayFooter: 0
   footer: Once you are ready to watch the video press the joystick...
