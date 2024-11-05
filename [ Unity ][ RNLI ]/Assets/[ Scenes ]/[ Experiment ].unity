@@ -714,7 +714,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sessionData: {fileID: 11400000, guid: 38154ecc41f93594e8db598e1f3509b9, type: 2}
-  sessionProgressionFlags: 24
+  sessionProgressionFlags: -1
   _stateMachine: {}
 --- !u!4 &2142979860
 Transform:
